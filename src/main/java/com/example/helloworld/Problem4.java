@@ -2,7 +2,7 @@ package com.example.helloworld;
 
 public class Problem4
 {
-    public static void main(String[] args)
+    public void solution4()
     {
         System.out.println(-5 + 8 * 6);
         System.out.println((55 + 9) % 9);
