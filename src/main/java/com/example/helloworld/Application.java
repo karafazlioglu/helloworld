@@ -32,8 +32,33 @@ public class Application
         // Problem7 p7 = new Problem7();
         // p7.solution7();
 
-        Problem8 p8 = new Problem8();
-        p8.solution8();
+        //Problem8 p8 = new Problem8();
+        //p8.solution8();
+
+        //Problem9 p9 = new Problem9();
+        //p9.solution9();
+
+        //Problem10 p10 = new Problem10();
+        //p10.solution10();
+
+        //Problem11 p11 = new Problem11();
+        //p11.solution11();
+
+        //Problem12 p12 = new Problem12();
+        //p12.solution12();
+
+        //Problem13 p13 = new Problem13();
+        //p13.solution13();
+
+        //Problem14 p14 = new Problem14();
+        //p14.solution14();
+
+        //Problem15 p15 = new Problem15();
+        //p15.solution15();
+
+        //Problem16 p16 = new Problem16();
+        //p16.solution16();
+
 
     }
 
