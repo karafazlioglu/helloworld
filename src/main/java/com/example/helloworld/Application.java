@@ -8,6 +8,7 @@ public class Application
     {
         //System.out.println("Hello world!");
 
+        // TODO switch case
         //Problem1 p1 = new Problem1();
         //p1.solution();
 
