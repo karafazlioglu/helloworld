@@ -6,13 +6,13 @@ public class Application
 
     public static void main(String[] args)
     {
-        System.out.println("Hello world!");
+        //System.out.println("Hello world!");
 
         //Problem1 p1 = new Problem1();
         //p1.solution();
 
         //Problem17 p17 = new Problem17();
-        //p17.test();
+        //p17.alternativeSolution();
 
         //Problem2 p2 = new Problem2();
         //p2.solution2();
@@ -58,6 +58,13 @@ public class Application
 
         //Problem16 p16 = new Problem16();
         //p16.solution16();
+
+        //Problem18 p18 = new Problem18();
+        //p18.solution18();
+
+        Problem19 p19 = new Problem19();
+        p19.solution19();
+
 
 
     }
