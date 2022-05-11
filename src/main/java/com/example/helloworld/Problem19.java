@@ -34,9 +34,5 @@ public class Problem19
         }
         System.out.println(" ");
 
-        //ArrayList<Integer> rem = new ArrayList<Integer>();
-        //rem.add(remainder);
-        //System.out.println(rem);
-
     }
 }
