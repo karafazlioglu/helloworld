@@ -21,8 +21,8 @@ public class Problem19
             //System.out.println(quotient);
             int remainder = num % 2;
             binary[i] = remainder;
+
             i++;
-            
             num = quotient;
         }
 

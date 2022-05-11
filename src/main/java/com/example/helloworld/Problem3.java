@@ -9,13 +9,14 @@ public class Problem3
         Scanner input = new Scanner (System.in);
 
         System.out.println("Enter the first number: ");
-        int num1 = input.nextInt();
+        float num1 = input.nextInt();
 
         System.out.println("Enter the first number: ");
-        int num2 = input.nextInt();
+        float num2 = input.nextInt();
 
-        int division = num1 / num2;
+        float division = num1 / num2;
 
+        // TODO float formatli yazma (2.33333 -->> 2.33)
         System.out.println("The result is: " + division);
     }
 }

@@ -22,7 +22,7 @@ public class Problem6
 
         System.out.println("--------Results--------");
         System.out.println(("Sum is: " + sum));
-        System.out.println(("Substraction is: " + sub));
+        System.out.println(("Subtraction is: " + sub));
         System.out.println(("Product is: " + prod));
         System.out.println(("Division is: " + div));
         System.out.println(("Remainder is: " + mod));

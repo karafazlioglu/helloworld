@@ -11,10 +11,10 @@ public class Problem11
         System.out.println("Enter the radius: ");
         double radius = io.nextDouble();
 
-        double perimeter = 2 * Math.PI* radius;
-        double area = Math.PI * 7.5 * radius;
+        double perimeter = 2 * Math.PI * radius;
+        double area = Math.PI * radius * radius;
 
-        System.out.println("Perimeter of the circle which has radius of 7.5 is: " + perimeter );
-        System.out.println("Area of the circle which has radius of 7.5 is: " + area );
+        System.out.println("Perimeter of the circle which has radius of " + radius + " is: " + perimeter );
+        System.out.println("Area of the circle which has radius of " + radius + " is: " + area );
     }
 }

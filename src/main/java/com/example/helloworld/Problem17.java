@@ -120,6 +120,7 @@ public class Problem17
         {
             sum[i++] = (int)((binary1 % 10 + binary2 % 10 + remainder) % 2);
             remainder = (int)((binary1 % 10 + binary2 % 10 + remainder) / 2);
+
             binary1 = binary1 / 10;
             binary2 = binary2 / 10;
         }

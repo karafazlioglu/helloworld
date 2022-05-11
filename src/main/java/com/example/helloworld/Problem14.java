@@ -11,9 +11,9 @@ public class Problem14
             System.out.println(p1);
         }
         System.out.println("* * * * * * ==================================");
-        for (int i = 0; i<6; i++)
+        for (int i = 0; i < 6; i++)
         {
-            System.out.println((p2));
+            System.out.println(p2);
         }
     }
 }

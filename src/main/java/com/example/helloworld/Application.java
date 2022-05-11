@@ -11,9 +11,6 @@ public class Application
         //Problem1 p1 = new Problem1();
         //p1.solution();
 
-        //Problem17 p17 = new Problem17();
-        //p17.alternativeSolution();
-
         //Problem2 p2 = new Problem2();
         //p2.solution2();
 
@@ -58,6 +55,9 @@ public class Application
 
         //Problem16 p16 = new Problem16();
         //p16.solution16();
+
+        //Problem17 p17 = new Problem17();
+        //p17.alternativeSolution();
 
         //Problem18 p18 = new Problem18();
         //p18.solution18();
