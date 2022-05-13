@@ -2,7 +2,7 @@ package com.example.helloworld;
 
 public class Problem14
 {
-    public static void solution14()
+    public void solution14()
     {
         String p1 = "* * * * * * ==================================\n * * * * *  ==================================";
         String p2 = "==============================================";

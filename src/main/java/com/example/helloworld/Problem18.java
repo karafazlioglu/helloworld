@@ -2,7 +2,7 @@ package com.example.helloworld;
 import java.util.Scanner;
 public class Problem18
 {
-    public static void solution18()
+    public void solution18()
     {
         long binary1, binary2, multiply = 0;
         int digit, factor = 1;

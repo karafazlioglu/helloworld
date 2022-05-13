@@ -104,7 +104,7 @@ public class Problem17
         System.out.println(String.valueOf(fo1) + so1 + " " + fo2 + so2 + " Result is: " + c2 + result1 + result0 );
     }
 
-    public void alternativeSolution()
+    public void solution17()
     {
         long binary1, binary2;
         int i = 0, remainder = 0;

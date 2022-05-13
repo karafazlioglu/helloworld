@@ -2,7 +2,7 @@ package com.example.helloworld;
 
 public class Problem15
 {
-    public static void solution15()
+    public void solution15()
     {
         int a,b;
         a = 15;

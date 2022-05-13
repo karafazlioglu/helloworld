@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Problem12
 {
-    public static void solution12()
+    public void solution12()
     {
         double sum = 0;
 
