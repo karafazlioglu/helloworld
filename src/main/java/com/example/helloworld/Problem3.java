@@ -1,5 +1,6 @@
 package com.example.helloworld;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Problem3
@@ -16,8 +17,7 @@ public class Problem3
 
         float division = num1 / num2;
 
-        // TODO float formatli yazma (2.33333 -->> 2.33)
-        System.out.println("The result is: " + division);
+        System.out.println("The result is: " + new DecimalFormat("###.###").format(division));
     }
 }
 
