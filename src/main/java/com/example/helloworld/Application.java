@@ -90,6 +90,10 @@ public class Application
                 Problem19 p19 = new Problem19();
                 p19.solution19();
                 break;
+            case 20:
+                Problem20 p20 = new Problem20();
+                p20.solution20();
+                break;
             default:
                 System.err.println("Problem no " + problemNo + " is not valid.");
                 break;
