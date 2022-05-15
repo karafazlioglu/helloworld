@@ -1,7 +1,7 @@
 package com.example.helloworld;
 
 import java.util.Scanner;
-import java.util.ArrayList;
+
 public class Problem19
 {
     public void solution19()
