@@ -99,7 +99,7 @@ public class Application
                 p31.solution31();
                 break;
             case 37:
-                Problem32 p37 = new Problem32();
+                Problem37 p37 = new Problem37();
                 p37.solution37();
                 break;
             default:

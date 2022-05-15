@@ -1,7 +1,7 @@
 package com.example.helloworld;
 import java.lang.*;
 
-public class Problem32
+public class Problem37
 {
     public void solution37()
     {
