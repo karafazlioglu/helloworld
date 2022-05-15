@@ -94,6 +94,14 @@ public class Application
                 Problem20 p20 = new Problem20();
                 p20.solution20();
                 break;
+            case 31:
+                Problem31 p31 = new Problem31();
+                p31.solution31();
+                break;
+            case 37:
+                Problem32 p37 = new Problem32();
+                p37.solution37();
+                break;
             default:
                 System.err.println("Problem no " + problemNo + " is not valid.");
                 break;
