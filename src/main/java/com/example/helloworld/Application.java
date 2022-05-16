@@ -90,6 +90,30 @@ public class Application
                 Problem19 p19 = new Problem19();
                 p19.solution19();
                 break;
+            case 20:
+                Problem20 p20 = new Problem20();
+                p20.solution20();
+                break;
+            case 31:
+                Problem31 p31 = new Problem31();
+                p31.solution31();
+                break;
+            case 37:
+                Problem37 p37 = new Problem37();
+                p37.solution37();
+                break;
+            case 40:
+                Problem40 p40 = new Problem40();
+                p40.solution40();
+                break;
+            case 41:
+                Problem41 p41 = new Problem41();
+                p41.solution41();
+                break;
+            case 42:
+                Problem42 p42 = new Problem42();
+                p42.solution42();
+                break;
             default:
                 System.err.println("Problem no " + problemNo + " is not valid.");
                 break;
