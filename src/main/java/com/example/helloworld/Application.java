@@ -94,9 +94,57 @@ public class Application
                 Problem20 p20 = new Problem20();
                 p20.solution20();
                 break;
+            case 21:
+                Problem21 p21 = new Problem21();
+                p21.solution21();
+                break;
+            case 22:
+                Problem22 p22 = new Problem22();
+                p22.solution22();
+                break;
+            case 23:
+                Problem23 p23 = new Problem23();
+                p23.solution23();
+                break;
+            case 24:
+                Problem24 p24 = new Problem24();
+                p24.solution24();
+                break;
+            case 25:
+                Problem25 p25 = new Problem25();
+                p25.solution25();
+                break;
+            case 26:
+                Problem26 p26 = new Problem26();
+                p26.solution26();
+                break;
+            case 27:
+                Problem27 p27 = new Problem27();
+                p27.solution27();
+                break;
+            case 28:
+                Problem28 p28 = new Problem28();
+                p28.solution28();
+                break;
+            case 29:
+                Problem29 p29 = new Problem29();
+                p29.solution29();
+                break;
+            case 30:
+                Problem30 p30 = new Problem30();
+                p30.solution30();
+                break;
             case 31:
                 Problem31 p31 = new Problem31();
                 p31.solution31();
+                break;
+            case 32:
+                Problem32 p32 = new Problem32();
+                p32.solution32();
+                break;
+            case 33:
+                Problem33 p33 = new Problem33();
+                p33.solution33();
                 break;
             case 37:
                 Problem37 p37 = new Problem37();

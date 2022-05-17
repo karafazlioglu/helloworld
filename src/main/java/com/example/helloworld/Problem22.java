@@ -1,8 +1,8 @@
 package com.example.helloworld;
 import java.util.Scanner;
-public class Problem21
+public class Problem22
 {
-    public void solution21()
+    public void solution22()
     {
         Scanner sc = new Scanner(System.in);
 
