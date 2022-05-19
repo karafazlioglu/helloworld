@@ -6,7 +6,10 @@ public class Problem22
     {
         Scanner sc = new Scanner(System.in);
 
-        long binaryNumber, decimalNumber = 0, j = 1, remainder;
+        long binaryNumber;
+        long decimalNumber = 0;
+        long j = 1;
+        long remainder;
 
         System.out.print("Input a binary number: ");
         binaryNumber = sc.nextLong();

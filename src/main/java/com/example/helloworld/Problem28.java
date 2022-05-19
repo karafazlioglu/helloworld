@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Problem28
 {
+
+    // TODO re-solve
     public static int hex_to_decimal(String s)
     {
         String digits = "0123456789ABCDEF";

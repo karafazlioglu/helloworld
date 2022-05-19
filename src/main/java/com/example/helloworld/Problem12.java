@@ -14,7 +14,7 @@ public class Problem12
 
         for(int i = 1; i <= n; i++)
         {
-            System.out.println("Input number " + "("+ (int) i +")" + ":");
+            System.out.println("Input number " + "(" + i + ")" + ":");
             sum += sc.nextInt();
         }
 

@@ -14,7 +14,5 @@ public class Problem15
         a = a - b; // (a + b) - a = b;
 
         System.out.println("After swapping a,b = " + a + " , " + b);
-
-
     }
 }

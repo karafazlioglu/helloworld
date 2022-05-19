@@ -14,21 +14,18 @@ public class Problem18
         while (binary2 != 0)
         {
             digit = (int)(binary2 % 10);
+            binary1 = binary1 * factor;
             if (digit == 1)
             {
-                binary1 = binary1 * factor;
-                multiply = binaryproduct((int) binary1, (int) multiply);
-            }
-            else
-            {
-                binary1 = binary1 * factor;
+                multiply = binaryProduct((int) binary1, (int) multiply);
             }
             binary2 = binary2 / 10;
             factor = 10;
         }
         System.out.print("Product of two binary numbers: " + multiply+"\n");
     }
-        static int binaryproduct(int binary1, int binary2)
+
+    private int binaryProduct(int binary1, int binary2)
     {
         int i = 0, remainder = 0;
         int[] sum = new int[20];
@@ -51,6 +48,5 @@ public class Problem18
             binary_prod_result = binary_prod_result * 10 + sum[i--];
         }
         return binary_prod_result;
-
     }
 }

@@ -11,7 +11,7 @@ public class Problem19
         System.out.println("Enter the number: ");
         int num = in.nextInt();
 
-        int binary[] = new int[30];
+        int[] binary = new int[30];
 
         int i = 0;
 
@@ -33,6 +33,5 @@ public class Problem19
                 System.out.print(" ");
         }
         System.out.println(" ");
-
     }
 }

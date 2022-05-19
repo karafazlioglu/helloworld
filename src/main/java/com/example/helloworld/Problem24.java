@@ -9,6 +9,7 @@ public class Problem24
 
         long binaryNumber, decimalNumber = 0, j = 1, remainder;
 
+        // TODO binary to octal
         System.out.print("Input a binary number: ");
         binaryNumber = sc.nextLong();
 
