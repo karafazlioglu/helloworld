@@ -1,46 +1,32 @@
 package com.example.helloworld;
 import java.util.Scanner;
 
+import static java.lang.System.in;
+
 public class Problem24
 {
     public void solution24()
     {
-        Scanner sc = new Scanner(System.in);
-
-        long binaryNumber, decimalNumber = 0, j = 1, remainder;
-
-        // TODO binary to octal
+        Scanner sc = new Scanner(in);
         System.out.print("Input a binary number: ");
-        binaryNumber = sc.nextLong();
+        long binaryNumber = sc.nextLong();
 
-        while (binaryNumber != 0)
+        char[] octal = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        StringBuilder oct = new StringBuilder();
+
+        while(binaryNumber != 0)
         {
-            remainder = binaryNumber % 10;
-            decimalNumber = decimalNumber + remainder * j;
-            j = j * 2;
-            binaryNumber = binaryNumber / 10;
+            long sum = 0;
+            int k = 1;
+            for (int i = 0; i < 3; i++)
+            {
+                long remainder = binaryNumber % 10;
+                sum = (sum + remainder * k);
+                binaryNumber = binaryNumber / 10;
+                k = 2 * k;
+            }
+            oct.insert(0, octal[(int) sum]);
+            System.out.println(oct);
         }
-        System.out.println("Decimal Number: " + decimalNumber);
-//------------------------------------------------------------------------
-        int i = 1;
-
-        int[] octalList = new int[100];
-
-        int quotient = (int) decimalNumber;
-
-        while (quotient != 0)
-        {
-            octalList[i++] = quotient % 8;
-            quotient = quotient / 8;
-        }
-        System.out.print("Octal number: ");
-
-        for (int k = i - 1 ; k > 0; k--)
-        {
-            System.out.print(octalList[k]);
-            if ( k % 4 == 0 )
-                System.out.print(" ");
-        }
-        System.out.println(" ");
     }
 }
