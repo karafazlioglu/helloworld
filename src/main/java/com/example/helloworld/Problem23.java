@@ -1,38 +1,47 @@
 package com.example.helloworld;
 import java.util.Scanner;
 
+import static java.lang.System.*;
+
 public class Problem23
 {
     public void solution23()
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(in);
 
-        int binaryNumber, decimalNumber = 0, j = 1, remainder;
-        char[] hexadecimal = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        int binaryNumber;
+        int remainder;
+        int sum = 0;
+        int sum2 = 0;
+        int remainder2;
+        int i, l;
+        int j = 1;
+        int k = 1;
 
-
+        char[] hexaDecimal = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
         // TODO binary to hex
         System.out.print("Input a binary number: ");
         binaryNumber = sc.nextInt();
+        int binaryNumber2 = binaryNumber / 10000;
 
-        while (binaryNumber != 0)
+        for (i = 0; i < 4; i ++)
         {
             remainder = binaryNumber % 10;
-            decimalNumber = decimalNumber + remainder * j;
-            j = j * 2;
+            sum = sum + remainder * k;
             binaryNumber = binaryNumber / 10;
+            k = 2 * k;
         }
-        System.out.println("Decimal Number: " + decimalNumber);
 
-        StringBuilder hexadec = new StringBuilder();
+        System.out.println(sum);
 
-        while(decimalNumber > 0)
+        for (l = 0; l < 4; l ++)
         {
-            int rem = decimalNumber % 16;
-            hexadec.insert(0, hexadecimal[rem]);
-            decimalNumber = decimalNumber / 16;
+            remainder2 = binaryNumber2 % 10;
+            sum2 = sum2 + remainder2 * j;
+            binaryNumber2 = binaryNumber2 / 10;
+            j = 2 * j;
         }
-        System.out.println("Hexadecimal number is " + hexadec);
-
+        System.out.println(sum2);
+        System.out.println("Hexadecimal number is " + hexaDecimal[sum2] + hexaDecimal[sum]);
     }
 }
