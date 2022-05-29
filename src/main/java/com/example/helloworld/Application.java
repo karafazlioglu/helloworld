@@ -120,7 +120,7 @@ public class Application
                 break;
             case 27:
                 Problem27 p27 = new Problem27();
-                p27.solution27();
+                p27.solution();
                 break;
             case 28:
                 Problem28 p28 = new Problem28();

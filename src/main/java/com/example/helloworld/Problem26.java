@@ -15,27 +15,27 @@ public class Problem26
 
         int i = 0;
 
-        long[] decimal = new long[100];
+        long[] binary = new long[100];
 
         while (octalNumber != 0)
         {
             long remainder = octalNumber % 10;
 
-            for(int k = 0; k < 3; k++)
+            for(int k = 0; k < 3; k ++)
             {
                 long quotient = remainder / 2;
                 long rem = remainder % 2;
-                decimal[i] = rem;
+                binary[i] = rem;
                 remainder = quotient;
                 i ++;
             }
             octalNumber /= 10;
         }
 
-        for (int j = i - 1 ; j >= 0; j--)
+        for (int j = i - 1 ; j >= 0; j --)
         {
-            System.out.print(decimal[j]);
-            if ( j % 4 == 0 )
+            System.out.print(binary[j]);
+            if ( j % 3 == 0 )
                 System.out.print(" ");
         }
         System.out.println(" ");
