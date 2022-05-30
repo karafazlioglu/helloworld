@@ -4,36 +4,35 @@ import java.util.Scanner;
 
 public class Problem28
 {
-
-    // TODO re-solve
-    public static int hex_to_decimal(String s)
+    public void solution()
     {
-        String digits = "0123456789ABCDEF";
-        s = s.toUpperCase();
+        Scanner sc = new Scanner(System.in);
 
-        int val = 0;
-
-        for (int i = 0; i < s.length(); i++)
-        {
-            char c = s.charAt(i);
-            int d = digits.indexOf(c);
-
-            val = 16 * val + d;
-        }
-        return val;
-    }
-    public void solution28()
-    {
-        String hexdec_num;
-
-        int dec_num;
-        Scanner scan = new Scanner(System.in);
+        String hexadecimalNumber;
 
         System.out.print("Input a hexadecimal number: ");
-        hexdec_num = scan.nextLine();
+        hexadecimalNumber = sc.next();
+        String hex = hexadecimalNumber.toLowerCase();
 
-        dec_num = hex_to_decimal(hexdec_num);
+        String hexDecimal = "0123456789abcdef";
 
-        System.out.print("Equivalent decimal number is: " + dec_num+"\n");
+        int[] b = new int[200];
+
+        int k = 1;
+        int i;
+
+        for (i = hex.length() - 1; i >= 0; i--)
+        {
+            char c = hex.charAt(i);
+            int a = hexDecimal.indexOf(c);
+            b[i] = a * k;
+            k = k * 16;
+        }
+
+        int sum = 0;
+        for (int j = b.length - 1; j >= 0; j--)
+            sum = sum + b[j];
+
+        System.out.println("Decimal number of " + hex + " is: " + sum);
     }
 }
