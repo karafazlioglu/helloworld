@@ -4,59 +4,46 @@ import java.util.Scanner;
 
 public class Problem29
 {
-    public static int hex_to_decimal(String s)
+    public void solution()
     {
-        String digits = "0123456789ABCDEF";
-        s = s.toUpperCase();
+        Scanner sc = new Scanner(System.in);
 
-        int val = 0;
-
-        for (int i = 0; i < s.length(); i++)
-        {
-            char c = s.charAt(i);
-            int d = digits.indexOf(c);
-
-            val = 16 * val + d;
-        }
-        return val;
-    }
-    public void solution29()
-    {
-        String hexdec_num;
-
-        int dec_num;
-        Scanner scan = new Scanner(System.in);
+        String hexadecimalNumber;
 
         System.out.print("Input a hexadecimal number: ");
-        hexdec_num = scan.nextLine();
+        hexadecimalNumber = sc.next();
+        String hex = hexadecimalNumber.toLowerCase();
 
-        dec_num = hex_to_decimal(hexdec_num);
-
-        System.out.print("Equivalent decimal number is: " + dec_num+"\n");
-
-        int binary[] = new int[30];
+        String hexDecimal = "0123456789abcdef";
 
         int i = 0;
+        int[] binary = new int[200];
+        int[] dec = new int[200];
+        int j;
+        int k;
+        int l;
 
-        while (dec_num != 0)
+        for (k = hex.length() - 1; k >= 0; k--)
         {
-            int quotient = dec_num / 2;
-            //System.out.println(quotient);
-            int remainder = dec_num % 2;
-            binary[i] = remainder;
+            char c = hex.charAt(k);
+            int decimal = hexDecimal.indexOf(c);
 
-            i++;
-            dec_num = quotient;
+            for (j = 0; j < 4; j++)
+            {
+                int remainder = decimal % 2;
+                binary[i] = remainder;
+                int quotient = decimal / 2;
+                decimal = quotient;
+                i++;
+            }
         }
 
-        for (int j = i - 1 ; j >= 0; j--)
+        for ( l = hex.length() * 4 - 1; l >= 0 ; l--)
         {
-            System.out.print(binary[j]);
-            if ( j % 4 == 0 )
+            System.out.print(binary[l]);
+            if ( l % 4 == 0 )
                 System.out.print(" ");
         }
         System.out.println(" ");
-
-
     }
 }
