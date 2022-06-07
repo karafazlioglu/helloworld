@@ -1,58 +1,53 @@
 package com.example.helloworld;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Problem30
 {
-    public static int hex_to_decimal(String s)
-    {
-        String digits = "0123456789ABCDEF";
-        s = s.toUpperCase();
-
-        int val = 0;
-
-        for (int i = 0; i < s.length(); i++)
-        {
-            char c = s.charAt(i);
-            int d = digits.indexOf(c);
-
-            val = 16 * val + d;
-        }
-        return val;
-    }
     public void solution30()
     {
-        String hexdec_num;
+        Scanner sc = new Scanner(System.in);
 
-        int dec_num;
-        Scanner scan = new Scanner(System.in);
+        String hexadecimalNumber;
 
         System.out.print("Input a hexadecimal number: ");
-        hexdec_num = scan.nextLine();
+        hexadecimalNumber = sc.next();
+        String hex = hexadecimalNumber.toLowerCase();
 
-        dec_num = hex_to_decimal(hexdec_num);
+        String hexDecimal = "0123456789abcdef";
 
-        System.out.print("Equivalent decimal number is: " + dec_num+"\n");
+        int i = 0;
+        int[] binary = new int[200];
+        int j;
+        int k;
 
-        int i = 1;
-
-        int[] octalList = new int[100];
-
-        int quotient = dec_num;
-
-        while (quotient != 0)
+        for (k = hex.length() - 1; k >= 0; k--)
         {
-            octalList[i++] = quotient % 8;
-            quotient = quotient / 8;
-        }
-        System.out.print("Octal number: ");
+            char c = hex.charAt(k);
+            int decimal = hexDecimal.indexOf(c);
 
-        for (int j = i - 1 ; j > 0; j--)
-        {
-            System.out.print(octalList[j]);
-            if ( j % 4 == 0 )
-                System.out.print(" ");
+            for (j = 0; j < 4; j++)
+            {
+                int remainder = decimal % 2;
+                binary[i] = remainder;
+                int quotient = decimal / 2;
+                decimal = quotient;
+                i++;
+            }
         }
-        System.out.println(" ");
+
+        if (i % 3 != 0)
+            i = i + 3 - (i % 3);
+
+        StringBuilder octal = new StringBuilder();
+        for (int n = 0; n < i/3; n++)
+        {
+            int dec = binary[3 * n] + 2 * binary[3 * n + 1] + 4 * binary[3 * n + 2];
+            octal.insert(0, dec);
+        }
+
+        System.out.println("Octal number is " + octal);
+
     }
 }
