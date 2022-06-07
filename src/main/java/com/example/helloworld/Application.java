@@ -124,11 +124,11 @@ public class Application
                 break;
             case 28:
                 Problem28 p28 = new Problem28();
-                p28.solution28();
+                p28.solution();
                 break;
             case 29:
                 Problem29 p29 = new Problem29();
-                p29.solution29();
+                p29.solution();
                 break;
             case 30:
                 Problem30 p30 = new Problem30();
@@ -144,11 +144,15 @@ public class Application
                 break;
             case 33:
                 Problem33 p33 = new Problem33();
-                p33.solution33();
+                p33.solution();
                 break;
             case 34:
                 Problem34 p34 = new Problem34();
                 p34.solution();
+                break;
+            case 35:
+                Problem35 p35 = new Problem35();
+                p35.solution();
                 break;
             case 37:
                 Problem37 p37 = new Problem37();
@@ -162,10 +166,6 @@ public class Application
                 Problem41 p41 = new Problem41();
                 p41.solution41();
                 break;
-            //case 42:
-                //Problem42 p42 = new Problem42();
-                //p42.solution42();
-                //break;
             default:
                 System.err.println("Problem no " + problemNo + " is not valid.");
                 break;
