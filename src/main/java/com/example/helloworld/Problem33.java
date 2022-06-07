@@ -3,23 +3,20 @@ import java.util.Scanner;
 
 public class Problem33
 {
-    public static int sumDigits(long n)
+    public void solution()
     {
         int sum = 0;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input an integer: ");
+
+        long n = input.nextLong();
+
         while (n != 0)
         {
             sum += n % 10;
             n /= 10;
         }
-        return sum;
-    }
-    public void solution33()
-    {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Input an integer: ");
-        
-        long n = input.nextLong();
-        
-        System.out.println("The sum of the digits is: " + sumDigits(n));
+        System.out.println(sum);
     }
 }
