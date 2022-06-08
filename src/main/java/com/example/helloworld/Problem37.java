@@ -1,21 +1,23 @@
 package com.example.helloworld;
 import java.lang.*;
+import java.util.Scanner;
 
 public class Problem37
 {
     public void solution37()
     {
-        String input = "Geeks for Geeks";
+        Scanner in = new Scanner(System.in);
 
-        StringBuilder input1 = new StringBuilder();
+        System.out.println("Enter a string: ");
+        String string = in.next();
 
-        // append a string into StringBuilder input1
-        input1.append(input);
+        char[] b = new char[200];
 
-        // reverse StringBuilder input1
-        input1.reverse();
-
-        // print reversed String
-        System.out.println(input1);
+        for (int i = string.length() - 1; i >= 0; i--)
+        {
+            char c = string.charAt(i);
+            b[i] = c;
+            System.out.print(b[i]);
+        }
     }
 }
