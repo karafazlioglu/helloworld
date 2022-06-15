@@ -166,6 +166,10 @@ public class Application
                 Problem38 p38 = new Problem38();
                 p38.solution();
                 break;
+            case 39:
+                Problem39 p39 = new Problem39();
+                p39.solution();
+                break;
             case 40:
                 Problem40 p40 = new Problem40();
                 p40.solution40();
