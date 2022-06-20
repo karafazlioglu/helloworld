@@ -178,6 +178,10 @@ public class Application
                 Problem41 p41 = new Problem41();
                 p41.solution41();
                 break;
+            case 42:
+                Problem42 p42 = new Problem42();
+                p42.solution();
+                break;
             default:
                 System.err.println("Problem no " + problemNo + " is not valid.");
                 break;

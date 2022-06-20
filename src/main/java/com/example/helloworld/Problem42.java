@@ -1,9 +1,11 @@
 package com.example.helloworld;
 import java.io.Console;
 import java.io.*;
+import java.util.Arrays;
+
 public class Problem42
 {
-    public void solution42()
+    public void solution()
     {
         Console cnsl = System.console();
 
@@ -24,6 +26,6 @@ public class Problem42
         char[] ch = cnsl.readPassword("Enter password : ");
 
         // Print password
-        System.out.println("Password : " + ch);
+        System.out.println("Password : " + new String(ch));
     }
 }
