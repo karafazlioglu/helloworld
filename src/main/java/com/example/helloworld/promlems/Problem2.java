@@ -1,10 +1,13 @@
 package com.example.helloworld.promlems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem2
+public class Problem2 implements Problem
 {
-    public void solution2()
+    @Override
+    public void solution()
     {
         Scanner input = new Scanner (System.in);
 

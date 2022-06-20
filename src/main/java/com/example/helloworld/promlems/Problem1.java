@@ -1,10 +1,14 @@
 package com.example.helloworld.promlems;
 
-public class Problem1
+import com.example.helloworld.Problem;
+
+public class Problem1 implements Problem
 {
-    public void solution1()
+    @Override
+    public void solution()
     {
         System.out.println("Hello");
         System.out.println("Muhammet Karafazlioglu");
+
     }
 }
