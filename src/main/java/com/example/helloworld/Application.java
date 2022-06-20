@@ -1,4 +1,6 @@
 package com.example.helloworld;
+import com.example.helloworld.promlems.*;
+
 import java.util.Scanner;
 public class Application
 {
