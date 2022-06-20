@@ -1,9 +1,10 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem32
-{
-    public void solution32()
+public class Problem32 implements Problem {
+    public void solution()
     {
         Scanner in = new Scanner(System.in);
         System.out.print("Input first integer: ");
@@ -30,4 +31,5 @@ public class Problem32
         if (first >= second)
             System.out.printf("%d >= %d\n", first, second);
     }
+
 }

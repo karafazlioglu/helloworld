@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
-public class Problem22
-{
-    public void solution22()
+public class Problem22 implements Problem {
+    public void solution()
     {
         Scanner sc = new Scanner(System.in);
 
@@ -23,4 +24,5 @@ public class Problem22
         }
         System.out.println("Decimal Number: " + decimalNumber);
     }
+
 }

@@ -1,7 +1,8 @@
 package com.example.helloworld.problems;
 
-public class Problem39
-{
+import com.example.helloworld.Problem;
+
+public class Problem39 implements Problem {
     public void solution()
     {
         int totalAmount = 0;

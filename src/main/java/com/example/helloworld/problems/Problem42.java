@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.io.Console;
 
-public class Problem42
-{
+public class Problem42 implements Problem {
     public void solution()
     {
         Console cnsl = System.console();

@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem25
-{
-    public void solution25()
+public class Problem25 implements Problem {
+    public void solution()
     {
         Scanner sc = new Scanner(System.in);
 
@@ -22,4 +23,5 @@ public class Problem25
         }
         System.out.println("Decimal Number: " + decimalNumber);
     }
+
 }

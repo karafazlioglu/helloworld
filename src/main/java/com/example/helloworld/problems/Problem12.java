@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem12
-{
-    public void solution12()
+public class Problem12 implements Problem {
+    public void solution()
     {
         double sum = 0;
 
@@ -22,5 +23,6 @@ public class Problem12
 
         System.out.println("Average:" + avgn);
     }
+
 }
 

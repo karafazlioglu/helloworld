@@ -1,9 +1,10 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem36
-{
+public class Problem36 implements Problem {
     public void solution()
     {
         System.out.println("Distance between the two points [ (x1,y1) & (x2,y2)]");
@@ -35,7 +36,6 @@ public class Problem36
         double d = radius * Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1));
 
         System.out.println("The distance between those points is: " + d);
-
 
     }
 }

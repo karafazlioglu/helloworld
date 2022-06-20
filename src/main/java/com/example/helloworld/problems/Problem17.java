@@ -1,9 +1,10 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem17
-{
+public class Problem17 implements Problem {
     public void test()
     {
         solution(0,0,0,0);
@@ -104,7 +105,7 @@ public class Problem17
         System.out.println(String.valueOf(fo1) + so1 + " " + fo2 + so2 + " Result is: " + c2 + result1 + result0 );
     }
 
-    public void solution17()
+    public void solution()
     {
         long binary1, binary2;
         int i = 0, remainder = 0;
@@ -134,4 +135,5 @@ public class Problem17
 
         System.out.print("\n");
     }
+
 }

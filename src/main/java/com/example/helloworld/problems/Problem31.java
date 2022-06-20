@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
 
-public class Problem31
-{
-    public void solution31()
+import com.example.helloworld.Problem;
+
+public class Problem31 implements Problem {
+    public void solution()
     {
         System.out.println("\nJava Version: " + System.getProperty("java.version"));
         System.out.println("Java Runtime Version: " + System.getProperty("java.runtime.version"));
@@ -11,4 +12,5 @@ public class Problem31
         System.out.println("Java Vendor URL: " + System.getProperty("java.vendor.url"));
         System.out.println("Java Class Path: " + System.getProperty("java.class.path") + "\n");
     }
+
 }

@@ -1,11 +1,12 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
 import static java.lang.System.in;
 
-public class Problem24
-{
-    public void solution24()
+public class Problem24 implements Problem {
+    public void solution()
     {
         Scanner sc = new Scanner(in);
         System.out.print("Input a binary number: ");
@@ -29,4 +30,5 @@ public class Problem24
             System.out.println(oct);
         }
     }
+
 }

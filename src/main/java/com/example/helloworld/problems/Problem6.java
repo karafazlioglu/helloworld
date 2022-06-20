@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem6
-{
-    public void solution6()
+public class Problem6 implements Problem {
+    public void solution()
     {
         Scanner input = new Scanner (System.in);
 
@@ -27,4 +28,5 @@ public class Problem6
         System.out.println(("Division is: " + div));
         System.out.println(("Remainder is: " + mod));
     }
+
 }

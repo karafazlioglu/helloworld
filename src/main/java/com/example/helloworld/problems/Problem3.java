@@ -1,11 +1,13 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Problem3
+public class Problem3 implements Problem
 {
-    public void solution3()
+    public void solution()
     {
         Scanner input = new Scanner (System.in);
 

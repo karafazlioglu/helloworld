@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
 
-public class Problem16
-{
-    public void solution16()
+import com.example.helloworld.Problem;
+
+public class Problem16 implements Problem {
+    public void solution()
     {
         System.out.println(" +\"\"\"\"\"+ ");
         System.out.println("[| o o |]");
@@ -11,4 +12,5 @@ public class Problem16
         System.out.println(" +-----+ ");
 
     }
+
 }

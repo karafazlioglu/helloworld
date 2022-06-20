@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem13
-{
-    public void solution13()
+public class Problem13 implements Problem {
+    public void solution()
     {
         Scanner io = new Scanner(System.in);
 
@@ -16,4 +17,5 @@ public class Problem13
 
         System.out.println("The perimeter is: " + 2 * (width + height) + " \tThe area is: " + width * height);
     }
+
 }

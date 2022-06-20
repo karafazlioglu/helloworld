@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
-public class Problem41
-{
-    public void solution41()
+public class Problem41 implements Problem {
+    public void solution()
     {
         Scanner in = new Scanner(System.in);
 
@@ -16,4 +17,5 @@ public class Problem41
         System.out.println("The ASCII value of " + c + " is: " + ascii);
         System.out.println("The ASCII value of " + c + " is: " + castAscii);
     }
+
 }

@@ -1,9 +1,10 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem20
-{
-    public void solution20()
+public class Problem20 implements Problem {
+    public void solution()
     {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the decimal number: ");

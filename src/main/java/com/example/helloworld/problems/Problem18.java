@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
-public class Problem18
-{
-    public void solution18()
+public class Problem18 implements Problem {
+    public void solution()
     {
         long binary1, binary2, multiply = 0;
         int digit, factor = 1;
@@ -49,4 +50,5 @@ public class Problem18
         }
         return binary_prod_result;
     }
+
 }

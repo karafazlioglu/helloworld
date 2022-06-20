@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem11
-{
-    public void solution11()
+public class Problem11 implements Problem {
+    public void solution()
     {
         Scanner io = new Scanner(System.in);
 
@@ -17,4 +18,5 @@ public class Problem11
         System.out.println("Perimeter of the circle which has radius of " + radius + " is: " + perimeter );
         System.out.println("Area of the circle which has radius of " + radius + " is: " + area );
     }
+
 }

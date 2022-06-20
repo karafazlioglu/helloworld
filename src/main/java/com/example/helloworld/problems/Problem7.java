@@ -1,10 +1,11 @@
 package com.example.helloworld.problems;
 
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
-public class Problem7
-{
-    public void solution7()
+public class Problem7 implements Problem {
+    public void solution()
         {
             Scanner input = new Scanner (System.in);
 
@@ -17,4 +18,5 @@ public class Problem7
                 System.out.println(num + " * " + i + " is: " + prod);
             }
         }
+
 }

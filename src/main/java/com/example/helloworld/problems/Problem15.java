@@ -1,8 +1,9 @@
 package com.example.helloworld.problems;
 
-public class Problem15
-{
-    public void solution15()
+import com.example.helloworld.Problem;
+
+public class Problem15 implements Problem {
+    public void solution()
     {
         int a,b;
         a = 15;
@@ -15,4 +16,5 @@ public class Problem15
 
         System.out.println("After swapping a,b = " + a + " , " + b);
     }
+
 }

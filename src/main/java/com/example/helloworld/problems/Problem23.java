@@ -1,11 +1,12 @@
 package com.example.helloworld.problems;
+import com.example.helloworld.Problem;
+
 import java.util.Scanner;
 
 import static java.lang.System.*;
 
-public class Problem23
-{
-    public void solution23()
+public class Problem23 implements Problem {
+    public void solution()
     {
         Scanner sc = new Scanner(in);
         System.out.print("Input a binary number: ");
@@ -30,4 +31,5 @@ public class Problem23
 
         System.out.println("Hexadecimal number is " + hex);
     }
+
 }
