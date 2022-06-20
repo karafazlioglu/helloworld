@@ -1,7 +1,7 @@
 package com.example.helloworld;
 
-import com.example.helloworld.promlems.Problem1;
-import com.example.helloworld.promlems.Problem2;
+import com.example.helloworld.problems.Problem1;
+import com.example.helloworld.problems.Problem2;
 
 public class ProblemGenerator
 {
