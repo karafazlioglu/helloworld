@@ -9,30 +9,9 @@ public class Application
 
     public static void main(String[] args)
     {
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-        int[] number = {10, 2, 2548, 1, 256, 89, 7, 95, 358, 32};
-        for (int j : number) numbers.add(j);
-        int num;
-        boolean allSorted = false;
-        int tour = 0;
-        while (!allSorted)
-        {
-            allSorted = true;
-            for (int i = 0; i < numbers.size() - 1; i++)
-            {
-                if (numbers.get(i) < numbers.get(i + 1))
-                {
-                    allSorted = false;
-                    num = numbers.get(i);
-                    numbers.remove(i);
-                    numbers.add(num);
-                }
-            }
-            tour += 1;
-        }
-        System.out.println(numbers);
-        System.out.println("I sorted this array greater to smaller by looping " + tour + " times");
+        Sort.sortNumbers2();
+
 
        // System.out.println("Hello world!");
 
