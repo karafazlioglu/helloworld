@@ -15,15 +15,15 @@ public class Sort
         while (!allSorted)
         {
             allSorted = true;
-            for (int i = 0; i < greaterToSmaller.length - 1; i++)
+            for (int i = 0; i < randomNumbers.length - 1; i++)
             {
-                if (greaterToSmaller[i] < greaterToSmaller[i+1])
+                if (randomNumbers[i] < randomNumbers[i+1])
                 {
                     allSorted = false;
-                    int num = greaterToSmaller[i];
-                    greaterToSmaller[i] = greaterToSmaller[i + 1];
-                    greaterToSmaller[i + 1] = num;
-                    for (int number : greaterToSmaller) System.out.print(number + " ");
+                    int num = randomNumbers[i];
+                    randomNumbers[i] = randomNumbers[i + 1];
+                    randomNumbers[i + 1] = num;
+                    for (int number : randomNumbers) System.out.print(number + " ");
                     System.out.println(" ");
                     loopCount += 1;
                 }
@@ -43,25 +43,25 @@ public class Sort
         for (int j : number) numbers.add(j);
         int num;
         boolean allSorted = false;
-        int tour = 0;
+        int loopCount = 0;
 
         while (!allSorted)
         {
             allSorted = true;
             for (int i = 0; i < numbers.size() - 1; i++)
             {
-                tour += 1;
-
                 if (numbers.get(i) < numbers.get(i + 1))
                 {
                     allSorted = false;
                     num = numbers.get(i);
-                    numbers.remove(i);
-                    numbers.add(num);
+                    numbers.set(i, numbers.get(i + 1));
+                    numbers.set(i + 1, num);
+                    loopCount += 1;
+
                 }
             }
         }
         System.out.println(numbers);
-        System.out.println("I sorted this array greater to smaller by looping " + tour + " times");
+        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
     }
 }
