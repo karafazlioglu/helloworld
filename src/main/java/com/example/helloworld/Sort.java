@@ -10,8 +10,68 @@ public class Sort
         int[] smallerToGrater = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] greaterToSmaller = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-        boolean allSorted = false;
         int loopCount = 0;
+
+//
+//        for (int number : randomNumbers) System.out.print(number + " ");
+//        System.out.println(" ");
+//        loopCount = method1(randomNumbers, false);
+//        for (int number : randomNumbers) System.out.print(number + " ");
+//        System.out.println(" ");
+//        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+//
+//        for (int number : smallerToGrater) System.out.print(number + " ");
+//        System.out.println(" ");
+//        loopCount = method1(smallerToGrater, false);
+//        for (int number : smallerToGrater) System.out.print(number + " ");
+//        System.out.println(" ");
+//        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+//
+//
+//        for (int number : greaterToSmaller) System.out.print(number + " ");
+//        System.out.println(" ");
+//        loopCount = method1(greaterToSmaller, false);
+//        for (int number : greaterToSmaller) System.out.print(number + " ");
+//        System.out.println(" ");
+//        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+
+
+
+
+
+
+        for (int number : randomNumbers) System.out.print(number + " ");
+        System.out.println(" ");
+        loopCount = method2(randomNumbers, false);
+        for (int number : randomNumbers) System.out.print(number + " ");
+        System.out.println(" ");
+        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+
+        for (int number : smallerToGrater) System.out.print(number + " ");
+        System.out.println(" ");
+        loopCount = method2(smallerToGrater, false);
+        for (int number : smallerToGrater) System.out.print(number + " ");
+        System.out.println(" ");
+        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+
+
+        for (int number : greaterToSmaller) System.out.print(number + " ");
+        System.out.println(" ");
+        loopCount = method2(greaterToSmaller, false);
+        for (int number : greaterToSmaller) System.out.print(number + " ");
+        System.out.println(" ");
+        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+
+
+    }
+
+    public static int method1(int[] randomNumbers, boolean debug)
+    {
+        if (debug)
+            System.out.println("############################");
+
+        int loopCount = 0;
+        boolean allSorted = false;
         while (!allSorted)
         {
             allSorted = true;
@@ -23,13 +83,51 @@ public class Sort
                     int num = randomNumbers[i];
                     randomNumbers[i] = randomNumbers[i + 1];
                     randomNumbers[i + 1] = num;
+                }
+
+                if (debug)
+                {
                     for (int number : randomNumbers) System.out.print(number + " ");
                     System.out.println(" ");
-                    loopCount += 1;
                 }
+                loopCount += 1;
             }
+            if (debug)
+                System.out.println("############################");
         }
-        System.out.println("I sorted this array greater to smaller by looping " + loopCount + " times");
+
+        return loopCount;
+    }
+
+    public static int method2(int[] randomNumbers, boolean debug)
+    {
+        if (debug)
+            System.out.println("############################");
+
+        int loopCount = 0;
+
+        for (int j = 0; j < randomNumbers.length; j++)
+        {
+            for (int i = 0; i < (randomNumbers.length - j - 1); i++)
+            {
+                if (randomNumbers[i] < randomNumbers[i+1])
+                {
+                    int num = randomNumbers[i];
+                    randomNumbers[i] = randomNumbers[i + 1];
+                    randomNumbers[i + 1] = num;
+                }
+
+                if (debug)
+                {
+                    for (int number : randomNumbers) System.out.print(number + " ");
+                    System.out.println(" ");
+                }
+                loopCount += 1;
+            }
+            if (debug)
+                System.out.println("############################");
+        }
+        return loopCount;
     }
     public static void sortNumbers2()
     {
