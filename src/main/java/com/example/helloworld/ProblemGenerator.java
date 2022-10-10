@@ -135,6 +135,9 @@ public class ProblemGenerator
             case 42:
                 p = new Problem42();
                 break;
+            case 43:
+                p = new Problem43();
+                break;
             default:
                 throw new Exception("Problem no " + problemNo + " is not valid.");
         }
