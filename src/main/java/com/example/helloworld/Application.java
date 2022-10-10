@@ -10,26 +10,26 @@ public class Application
     public static void main(String[] args)
     {
         //Sort.sortNumbers2();
-        Sort.sortNumbers();
+       // Sort.sortNumbers();
 
 
-       // System.out.println("Hello world!");
+       System.out.println("Hello world!");
 
-       // Scanner input = new Scanner (System.in);
-       // System.out.println("Enter the problem number: ");
-        //int problemNo = input.nextInt();
+       Scanner input = new Scanner (System.in);
+       System.out.println("Enter the problem number: ");
+        int problemNo = input.nextInt();
 
-       // try
-        //{
-        //    // createProblem
-        //    Problem p = ProblemGenerator.createProblem(problemNo);
-        //    // call solution
-        //    p.solution();
-       // }
-       // catch (Exception e)
-        //{
-         //   System.err.println(e.getMessage());
-        //}
+       try
+        {
+        //    createProblem
+            Problem p = ProblemGenerator.createProblem(problemNo);
+             //call solution
+            p.solution();
+        }
+        catch (Exception e)
+        {
+            System.err.println(e.getMessage());
+        }
     }
 
 
