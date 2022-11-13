@@ -2,6 +2,9 @@ package com.example.helloworld.problems;
 import com.example.helloworld.Problem;
 
 import java.io.Console;
+import java.io.Console;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Problem42 implements Problem {
     public void solution()

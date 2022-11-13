@@ -138,6 +138,21 @@ public class ProblemGenerator
             case 43:
                 p = new Problem43();
                 break;
+            case 44:
+                p = new Problem44();
+                break;
+            case 45:
+                p = new Problem45();
+                break;
+            case 46:
+                p = new Problem46();
+                break;
+            case 217:
+                p = new Problem217();
+                break;
+            case 242:
+                p = new Problem242();
+                break;
             default:
                 throw new Exception("Problem no " + problemNo + " is not valid.");
         }
