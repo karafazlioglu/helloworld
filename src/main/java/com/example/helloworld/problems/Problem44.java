@@ -18,6 +18,9 @@ public class Problem44 implements Problem
         System.out.println("5 + 55 + 555 = " + total);
 
 
+        System.out.printf("%d + %d%d + %d%d%d\n", number,number,number,number,number,number);
+
+
     }
 
 }

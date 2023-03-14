@@ -150,12 +150,12 @@ public class ProblemGenerator
             case 217:
                 p = new Problem217();
                 break;
-            case 242:
-                p = new Problem242();
-                break;
-            case 1111:
-                p = new Problem1111();
-                break;
+            //case 242:
+                //p = new Problem242();
+                //break;
+            //case 1111:
+                //p = new Problem1111();
+                //break;
             case 499:
                 p = new Problem499();
                 break;
