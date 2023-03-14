@@ -147,6 +147,9 @@ public class ProblemGenerator
             case 46:
                 p = new Problem46();
                 break;
+            case 47:
+                p = new Problem47();
+                break;
             case 217:
                 p = new Problem217();
                 break;
