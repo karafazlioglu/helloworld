@@ -10,12 +10,17 @@ public class Problem41 implements Problem {
         System.out.println("Enter the char: ");
         String ch = in.next();
 
-        char c = ch.charAt(0);
-        int ascii = c;
-        int castAscii = (int) c;
+        for (int i = 0; i < ch.length(); i++){
+            char c = ch.charAt(i);
+            int ascii = c;
+            //int castAscii = c;
 
-        System.out.println("The ASCII value of " + c + " is: " + ascii);
-        System.out.println("The ASCII value of " + c + " is: " + castAscii);
+            System.out.println("The ASCII value of " + c + " is: " + ascii);
+            //System.out.println("The ASCII value of " + c + " is: " + castAscii);
+        }
+
+
+
     }
 
 }
