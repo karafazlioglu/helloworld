@@ -10,7 +10,8 @@ public class Problem41 implements Problem {
         System.out.println("Enter the char: ");
         String ch = in.next();
 
-        for (int i = 0; i < ch.length(); i++){
+        for (int i = 0; i < ch.length(); i++)
+        {
             char c = ch.charAt(i);
             int ascii = c;
             //int castAscii = c;
