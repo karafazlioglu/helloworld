@@ -9,6 +9,7 @@ public class Application
 
     public static void main(String[] args)           // main method is initialized to choose the problem number
     {
+        // sort methods created in sort class is called here
         //Sort.sortNumbers2();
        // Sort.sortNumbers();
 
