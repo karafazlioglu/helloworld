@@ -8,26 +8,19 @@ public class Problem51 implements Problem
 {
     public void solution()
     {
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter a number(string): ");
-        // String str = sc.nextLine();
+        String str = "25";            // A string that consists of a number is formed
 
+        int[] intList = new int[str.length()];             // An integer list named intList is formed
 
-        String str = "25";            // str adında stringe sayı ve harften oluşan bir string depolanır.
-
-        int[] intList = new int[str.length()];             // intList adında bir integer listesi tanımlanır
-
-        for (int i = 0; i < intList.length; i++)        // intList for döngüsüne eklenir
+        for (int i = 0; i < intList.length; i++)        // intList is added to for loop
         {
-            char c = str.charAt(i);         // c adında açılan char değişkenine str stringinin karakterleri tanımlanır
-            int ascii = c;                  // c karakterlerinin ascii numarası ascii olarak int depolanır
-            if (ascii < 58 & ascii > 47)    // sadece rakamların listeye dahil edileceği için rakamların ascii numara aralığı if koşulu ile belirlenir
-            {
-                intList[i] = (ascii - 48);  // string içerisindeki rakamlar tek tek liste içerisine integer olarak dahil edilir.
-            }
+            char c = str.charAt(i);         // Strings that came from str are identified to char variable named c.
+            int ascii = c;                  // ascii number of character in c is stored as integer ascii as ascii.
+
+            intList[i] = (ascii - 48);  // numbers in the string move to intList that formed before as integer one by one
         }
 
-        for (int j = 0; j < intList.length; j ++)   // listenin tek satırda sıralı halde gösterimi yapılır.
+        for (int j = 0; j < intList.length; j ++)   // The print of the list is done sequentially in a single line
              System.out.print(intList[j]);
     }
 
