@@ -1,6 +1,6 @@
 package com.example.helloworld;
 
-public interface Problem
+public interface Problem        // interface named problem is initialized
 {
-    void solution();
+    void solution();        // solution method is initialized
 }
