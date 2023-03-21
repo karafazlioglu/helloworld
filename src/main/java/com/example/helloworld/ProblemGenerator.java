@@ -2,16 +2,16 @@ package com.example.helloworld;
 
 import com.example.helloworld.problems.*;
 
-public class ProblemGenerator
+public class ProblemGenerator       // problem generator class is formed at first
 {
-    public static Problem createProblem(int problemNo) throws Exception
+    public static Problem createProblem(int problemNo) throws Exception     // problem method is created by getting integer problem number with throwing exception
     {
-        Problem p;
-        switch (problemNo)
+        Problem p;      // problem named p is called
+        switch (problemNo)      // by switching problem no, problem no case is run
         {
-            case 1:
-                p = new Problem1();
-                break;
+            case 1:         // case number that refers to problem number is selected here
+                p = new Problem1();     // solution of the problem is stored to the p here
+                break;      // breaks after solution
             case 2:
                 p = new Problem2();
                 break;
@@ -175,9 +175,9 @@ public class ProblemGenerator
                 p = new Problem499();
                 break;
             default:
-                throw new Exception("Problem no " + problemNo + " is not valid.");
+                throw new Exception("Problem no " + problemNo + " is not valid.");      // if problem no doesn't exist, exception steps in
         }
 
-        return p;
+        return p;       // finally problem named p is returned
     }
 }
