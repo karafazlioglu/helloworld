@@ -168,6 +168,9 @@ public class ProblemGenerator       // problem generator class is formed at firs
             case 53:
                 p = new Problem53();
                 break;
+            case 54:
+                p = new Problem54();
+                break;
             case 217:
                 p = new Problem217();
                 break;
