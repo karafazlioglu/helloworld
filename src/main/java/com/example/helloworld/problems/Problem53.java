@@ -21,7 +21,7 @@ public class Problem53 implements Problem
         // num1 < num2 < num 3
 
         boolean result;
-        boolean abc = false;
+        boolean abc = true;
 
         result = num1 < num2 & num2 < num3;
 
