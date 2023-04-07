@@ -35,7 +35,9 @@ public class Problem54 implements Problem
             rightmost[i] = right;
 
         }
-        result = (int)rightmost[0] == (int)rightmost[1] || (int)rightmost[0] == (int)rightmost[2] || (int)rightmost[1] == (int)rightmost[2];
+        result = (int)rightmost[0] == (int)rightmost[1]
+                || (int)rightmost[0] == (int)rightmost[2]
+                || (int)rightmost[1] == (int)rightmost[2];
         System.out.println(result);
 
 
